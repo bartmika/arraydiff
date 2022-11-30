@@ -79,3 +79,28 @@ func TestUints64Case3(t *testing.T) {
 		t.Errorf("incorrect removed array contents, got %v but was expecting %v", actualRemovedArr, expectedRemovedArr)
 	}
 }
+
+func TestUints64Case4(t *testing.T) {
+	// Sample data.
+	oldArr := []uint64{}
+	newArr := []uint64{}
+
+	// Run our test.
+	actualAddedArr, actualSameArr, actualRemovedArr := Uints64(oldArr, newArr)
+
+	// Correct results.
+	expectedAddedArr := []uint64{}
+	expectedSameArr := []uint64{}
+	expectedRemovedArr := []uint64{}
+
+	// Verify.
+	if len(actualAddedArr) != 0 {
+		t.Errorf("incorrect added array contents, got %v but was expecting %v", actualAddedArr, expectedAddedArr)
+	}
+	if len(actualSameArr) != 0 {
+		t.Errorf("incorrect same array contents, got %v but was expecting %v", actualSameArr, expectedSameArr)
+	}
+	if len(actualRemovedArr) != 0 {
+		t.Errorf("incorrect removed array contents, got %v but was expecting %v", actualRemovedArr, expectedRemovedArr)
+	}
+}
