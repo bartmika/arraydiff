@@ -1,4 +1,4 @@
-package diffkit
+package arraydiff
 
 import (
 	"reflect"

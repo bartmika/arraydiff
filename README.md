@@ -1,22 +1,22 @@
-# diffkit
-[![GoDoc](https://godoc.org/github.com/gomarkdown/markdown?status.svg)](https://pkg.go.dev/github.com/bartmika/diffkit)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bartmika/diffkit)](https://goreportcard.com/report/github.com/bartmika/diffkit)
-[![License](https://img.shields.io/github/license/bartmika/diffkit)](https://github.com/bartmika/diffkit/blob/master/LICENSE)
-![Go version](https://img.shields.io/github/go-mod/go-version/bartmika/diffkit)
+# arraydiff
+[![GoDoc](https://godoc.org/github.com/gomarkdown/markdown?status.svg)](https://pkg.go.dev/github.com/bartmika/arraydiff)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bartmika/arraydiff)](https://goreportcard.com/report/github.com/bartmika/arraydiff)
+[![License](https://img.shields.io/github/license/bartmika/arraydiff)](https://github.com/bartmika/arraydiff/blob/master/LICENSE)
+![Go version](https://img.shields.io/github/go-mod/go-version/bartmika/arraydiff)
 
-Convenience functions to help you find differences. Fully tested and no external dependencies.
+Convenience functions to help you find content differences in your arrays. Fully tested and no external dependencies.
 
 ## Installation
 
 In your Golang project, please run:
 
 ```
-go get github.com/bartmika/diffkit
+go get github.com/bartmika/arraydiff
 ```
 
 ## Documentation
 
-All [documentation](https://pkg.go.dev/github.com/bartmika/diffkit) can be found here.
+All [documentation](https://pkg.go.dev/github.com/bartmika/arraydiff) can be found here.
 
 ## Example Usage
 
@@ -26,7 +26,7 @@ package main
 import (
     "fmt"
 
-    "github.com/bartmika/diffkit"
+    "github.com/bartmika/arraydiff"
 
     func main(){
         // Sample data.
@@ -46,7 +46,7 @@ import (
 
 ## Contributing
 
-Found a bug? Want a feature to improve your developer experience when finding the difference? Please create an [issue](https://github.com/bartmika/diffkit/issues).
+Found a bug? Want a feature to improve your developer experience when finding the difference? Please create an [issue](https://github.com/bartmika/arraydiff/issues).
 
 ## License
 Made with ❤️ by [Bartlomiej Mika](https://bartlomiejmika.com).   

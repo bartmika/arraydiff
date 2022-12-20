@@ -1,4 +1,4 @@
-package diffkit
+package arraydiff
 
 // Uints64 Function takes the original array and compare it with the change array to return three arrays: (1) Array with new values added to original array. (2) Array with values not changed between original and change array. (3) Array with values removed from original array.
 func Uints64(originalArr []uint64, changeArr []uint64) (addedArr, sameArr, removedArr []uint64) {
