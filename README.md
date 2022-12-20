@@ -33,8 +33,8 @@ import (
     	oldArr := []uint64{1, 2, 3, 4, 5}
     	newArr := []uint64{1, 2, 6, 7, 8, 9, 10}
 
-    	// See what differences between the two arrays.
-    	addedArr, sameArr, removedArr := Uints64(oldArr, newArr)
+    	// See what are the differences between the two arrays of type `uint64` data-types.
+    	addedArr, sameArr, removedArr := arraydiff.Uints64(oldArr, newArr)
 
     	// Correct results shown in comments.
         fmt.Println(addedArr)   // 6, 7, 8, 9, 10
