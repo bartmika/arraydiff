@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/bartmika/arraydiff)](https://github.com/bartmika/arraydiff/blob/master/LICENSE)
 ![Go version](https://img.shields.io/github/go-mod/go-version/bartmika/arraydiff)
 
-Convenience functions to help you find content differences in your arrays. Fully tested and no external dependencies.
+Convenience functions to help you find content differences in your arrays. Fully unit-tested.
 
 ## Installation
 
