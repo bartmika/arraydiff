@@ -11,7 +11,7 @@ func TestUints64Case1(t *testing.T) {
 	newArr := []uint64{1, 2, 6, 7, 8, 9, 10}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := Uints64(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := Uints64s(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []uint64{6, 7, 8, 9, 10}
@@ -36,7 +36,7 @@ func TestUints64Case2(t *testing.T) {
 	newArr := []uint64{}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := Uints64(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := Uints64s(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []uint64{}
@@ -61,7 +61,7 @@ func TestUints64Case3(t *testing.T) {
 	newArr := []uint64{1, 2, 3, 4, 5}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := Uints64(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := Uints64s(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []uint64{1, 2, 3, 4, 5}
@@ -86,7 +86,7 @@ func TestUints64Case4(t *testing.T) {
 	newArr := []uint64{}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := Uints64(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := Uints64s(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []uint64{}

@@ -6,13 +6,13 @@ import (
 	"testing"
 )
 
-func TestBigIntCase1(t *testing.T) {
+func TestBigIntsCase1(t *testing.T) {
 	// Sample data.
 	oldArr := []*big.Int{big.NewInt(1), big.NewInt(2), big.NewInt(3), big.NewInt(4), big.NewInt(5)}
 	newArr := []*big.Int{big.NewInt(1), big.NewInt(2), big.NewInt(6), big.NewInt(7), big.NewInt(8), big.NewInt(9), big.NewInt(10)}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := BigInt(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := BigInts(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []*big.Int{big.NewInt(6), big.NewInt(7), big.NewInt(8), big.NewInt(9), big.NewInt(10)}
@@ -31,13 +31,13 @@ func TestBigIntCase1(t *testing.T) {
 	}
 }
 
-func TestBigIntCase2(t *testing.T) {
+func TestBigIntsCase2(t *testing.T) {
 	// Sample data.
 	oldArr := []*big.Int{big.NewInt(1), big.NewInt(2), big.NewInt(3), big.NewInt(4), big.NewInt(5)}
 	newArr := []*big.Int{}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := BigInt(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := BigInts(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []*big.Int{}
@@ -56,13 +56,13 @@ func TestBigIntCase2(t *testing.T) {
 	}
 }
 
-func TestBigIntCase3(t *testing.T) {
+func TestBigIntsCase3(t *testing.T) {
 	// Sample data.
 	oldArr := []*big.Int{}
 	newArr := []*big.Int{big.NewInt(1), big.NewInt(2), big.NewInt(3), big.NewInt(4), big.NewInt(5)}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := BigInt(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := BigInts(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []*big.Int{big.NewInt(1), big.NewInt(2), big.NewInt(3), big.NewInt(4), big.NewInt(5)}
@@ -81,13 +81,13 @@ func TestBigIntCase3(t *testing.T) {
 	}
 }
 
-func TestBigIntCase4(t *testing.T) {
+func TestBigIntsCase4(t *testing.T) {
 	// Sample data.
 	oldArr := []*big.Int{}
 	newArr := []*big.Int{}
 
 	// Run our test.
-	actualAddedArr, actualSameArr, actualRemovedArr := BigInt(oldArr, newArr)
+	actualAddedArr, actualSameArr, actualRemovedArr := BigInts(oldArr, newArr)
 
 	// Correct results.
 	expectedAddedArr := []*big.Int{}
